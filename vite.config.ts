@@ -9,4 +9,14 @@ export default defineConfig({
     server: {
         port: 5174,
     },
+    preview: {
+        port: 4174,
+        host: "0.0.0.0",
+        strictPort: false,
+        allowedHosts: [
+            "sui-eco-dir-admin-fe-production.up.railway.app",
+            ".up.railway.app",
+            "localhost",
+        ],
+    },
 });
